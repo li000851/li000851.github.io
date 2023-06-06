@@ -8,16 +8,27 @@
 </head>
 <body>
 
-	<header>
-		<h1>Siwei Li</h1>	
-	</header>
 
+
+	<header>
+		<h1>Self Introduction</h1>	
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="note.html">Meet Bubble</a></li>
+			</ul>
+		</nav>
+	</header>
 	<main>
-		<h2>About Me!</h2>
+		<article>
+		
+		<h2>Siwei Li</h2>
+		<img src="images/image1.jpg" alt="selfie photo">
 		 
-		<p><strong>Hi there, my name is Siwei Li</strong>, and I am a new international student at Algonquin College, starting in May 8<sup>th</sup> 2023. I am currently studying Interactive Media Design. </p>
+		<p><strong>Hi there, my name is Siwei Li</strong>, and I am a new international student at Algonquin College, starting in May 8<sup>th</sup> 2023. I am currently studying <abbr title="Interactive Media Design">IMD</abbr>. </p>
 		<blockquote>
-			<p>"The future belongs to those who believe in the beauty of their dreams." </p>
+			<p><em>"The future belongs to those who believe in the beauty of their dreams." </em></p>
 			<cite>- Eleanor Roosevelt</cite>
 
 		</blockquote>
@@ -28,13 +39,88 @@
 		<h3>As a budding web developer</h3>
 		<p>I'm passionate about creating engaging user experiences through interactive web development. Each line of code brings me a sense of fulfillment and accomplishment. I'm committed to continuous learning and honing my skills to become a proficient web developer.</p>
 		<blockquote>
-			<p>"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful."</p>
+			<p><em>"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful."</em></p>
 			<cite>- Albert Schweitzer</cite>
 		
 		</blockquote>
 		<p>
 			This quote reminds me that true success comes from doing what you love. With my genuine passion for web development, I'm confident that I will achieve success by pursuing what brings me happiness.</p>
-	</main>
+		</article>
+	
+
+	
+		<section>
+			<h2>Most popular fast food survey</h2>
+			<form action="note.html" method="get">
+
+			    <div>
+					<h4><label for="name">Name</label></h4>
+					<input id="name" name="frame" type="text">
+
+				</div>
+
+				<div>
+					<h4>Gender</h4>
+			
+					<label for="female">Famale</label>
+					<input type="radio" name="reply" id="female">
+
+					<label for="male">Male</label>
+					<input type="radio" name="reply" id="male">
+
+					<label for="x">X</label>
+					<input type="radio" name="reply" id="x">
+					
+				</div>
+
+		
+
+
+				<div>
+					<h4><label for="Brands">Fast Food Brands</label></h4>
+					<select name="Brands" id="Brands">
+						<option value="">-</option>
+						<option value="kfc">KFC</option>
+						<option value="mcDonalds">McDonald's</option>
+						<option value="wendys">Wendy's</option>
+						<option value="popeyes">Popeyes</option>
+						<option value="burgerking ">Burger King </option>
+											
+					</select>
+
+				</div>
+
+				<div>
+
+					<h4><label for="others">Others</label></h4>
+					<textarea name="others" id="others"></textarea>
+
+
+				</div>
+
+				<div>
+                    <h3>Would you like a reply?</h3>
+
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="reply" id="yes">
+
+                    <label for="no">No</label>
+                    <input type="radio" name="reply" id="no">
+
+                </div>
+
+
+				<div>
+					<button type="submit">Send</button>
+					
+				</div>
+
+				</form>
+
+
+		</section>
+
+		</main>
 
 <footer>
 	<p><small>&copy; 2023 Siwei Li.</small></p>
