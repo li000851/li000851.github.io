@@ -1,0 +1,87 @@
+
+/*Targeting multiple elements*/
+body{
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size:18px;
+}
+/*Element selector*/
+header, footer{
+	background-color: rgb(255, 250, 232);
+}
+body {
+	background-image: linear-gradient(to bottom, rgb(233, 239, 168), rgb(246, 198, 159), rgb(195,197,252));
+  }
+
+  h1,h2 {
+	color: rgb(80, 0, 255);
+  }
+ 
+
+
+/*Class selector*/
+.site-title{
+	color: rgb(80, 0, 255);
+}
+
+/*ID selector*/
+#my-image{
+	box-shadow: 0 0 2px 1px #000000;
+}
+
+/*nth-child selector*/
+.hobby-list li:nth-child(odd) {
+	background-color: lightblue;
+  }
+/*Replace the bullets from the list of hobbies with squares*/
+.hobby-list{
+	list-style-type: square;
+}
+
+/*Remove the bullets from the unordered list in navigation (only if you have used the ul tag inside the nav tag)*/
+.nav-list {
+	list-style-type: none;
+  }
+/*Remove the underline from the links*/
+
+.nav-list a {
+text-decoration:none;
+}
+
+.hobby-list{
+	text-decoration:none;
+}
+
+.link-container a {
+	text-decoration:none;
+	}
+
+/*Add a background and border to the links*/
+
+.nav-list a {
+	color: rgb(85, 134, 0);
+	}
+
+
+
+.link-container a {
+	background-color: rgb(219, 255, 128);
+	border: 1px solid blue;
+	padding: 10px 20px;
+	
+	color: rgb(255, 0, 123);
+  }
+  
+
+  
+/*Change the background colour on hover or focus state of the links*/
+
+.link-container a:hover {
+	background-color: rgb(255, 0, 123);
+	color: white;
+  }
+
+  .nav-list a:hover{
+	background-color: blue;
+	color: white;
+  }
+  
