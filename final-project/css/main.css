@@ -1,0 +1,532 @@
+*{
+    box-sizing: border-box;
+} 
+
+.body {
+    background-color: #fff;
+    line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2rem; 
+    font-weight: bolder;
+}
+
+
+
+
+.wrapper {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* img{
+    width: auto;
+    height: auto;
+} */
+
+
+
+
+
+/* 导航栏样式 */
+#nav-logo{
+	width: 100px;
+    height: auto;
+    margin: 1rem;
+}
+
+header .wrapper {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+header{
+    background-color: #222222;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+nav li {
+    margin-right: 10px;
+}
+
+nav li a{
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+/* 导航栏鼠标悬停状态 */
+nav a {
+    color: #c78b07;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #333;
+    background-color: #c78b07;
+	background-size: 10px;
+}
+nav a:active, 
+nav a:focus {
+    color: #333;
+    background-color: #c78b07;
+}
+
+/* 搜索边框的大小样式 */
+.search-container {
+    display: flex; 
+    align-items: center; 
+}
+.search-input {
+    flex-grow: 1;
+    width: 100%;
+    height: 30px;
+}
+/* 搜索按钮描边样式 */
+#search-button {
+    align-items: center; 
+
+    border: 1px solid #c78b07; 
+    padding: 2px 3px;
+    
+    background-color: #222222;
+    color: #c78b07;
+}
+
+/* banner 图片样式 */
+
+.f-white{
+    color: #ffffff;
+}
+.hero-banner{
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+
+    background-position: center;
+    padding: 2em 0;
+}
+
+
+
+.overlay{
+   
+    background-color: hwb(0 0% 100% / 0.5);
+    max-width: 1200px;
+    width: 85%;
+    padding: 1rem;
+    margin: 2rem auto;
+
+}
+
+
+
+
+.btn{
+    background-color: #c78b07;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 1rem;
+
+    text-align: center; 
+
+    padding-right: 1.5rem;
+}
+
+/* about us */
+
+#about-us{
+    background-color: #ffe6ac;
+    
+}
+.grid{
+    margin: 1rem;
+}
+.intro-grid{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.aboutus-pic{
+    grid-column: 1 / 2; 
+    width: 100%; 
+    padding: 1rem;
+}
+
+
+
+/* our services: Digital Transformation and Marketing */
+
+
+/* 创建grid */
+.our-services{
+    background-color: #ffffff;   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+    
+    grid-gap: 10px;
+}
+
+/* 背景颜色,图片和按钮 */
+.dt-pic{
+    width: 100%;
+}
+.marketing-pic{
+    width: 100%;
+}
+.bg-color{
+    background-color: #ffe6ac;
+    padding-bottom: 2rem;
+}
+
+
+article {
+    text-align: start;
+}
+.test{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.space {
+    margin-bottom: 1rem; 
+}
+.btn2{
+    background-color: #222222;
+
+    text-align: center; 
+    display: inline-block;
+    width: 100%;
+    padding: 5%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+    margin-bottom: auto;
+
+}
+ 
+/* Video Production& Web Development& Print */
+
+.our-services2{
+    background-color: #ffffff;   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+    
+    grid-gap: 10px;
+    padding-top: 1rem;
+}
+
+.vp-pic, .wd-pic, .print-pic{
+    width: 100%;
+}
+
+/* Our Vision */
+
+
+.vision-banner{
+
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+
+    background-position: center;
+    margin-top: 1rem;
+}
+
+.overlay2{
+    width: 100%;
+    padding: 1rem;
+}
+
+.btn3{
+    background-color: #00000070;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 1rem;
+
+    text-align: center; 
+    padding-right: 1rem;
+    border: 1px solid #c78b07
+}
+
+
+/* our team */
+
+.intro-grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+}
+
+hr{
+    border: 1px solid #c78b07
+}
+
+.ot-color{
+    background-color: #ffe6ac;
+}
+
+.text-content {
+    padding: 1rem;
+    grid-column: 1 / 2; 
+    grid-row: 1 / 2;
+}
+
+
+.ot-color2{
+    background-color: #ffe6ac;
+    grid-column: 1 / 2; 
+    grid-row: 2 / 2;
+}
+
+.text-content2 {
+    padding: 1rem;
+    grid-column: 2 / 1; 
+    grid-row: 2 / 2;
+}
+
+
+/* contact us */
+
+.intro-grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+
+    
+    gap: 0;
+}
+
+.box-survey{
+    grid-column: 1 / 1;
+}
+
+
+input[type="text"] {
+    width: 98%; 
+    height: 2rem;
+}
+
+#message{
+    height: 8rem;
+}
+
+.location{
+    grid-column: 1 / 2;
+}
+
+.map{
+    width: 100%;
+
+}
+
+.button-2{
+    margin-top: 1rem;
+    background-color: #222222;   
+    color:#c78b07;
+    border: none;      
+    
+    padding: 10px 15px;        
+    text-align: center;        
+    text-decoration: none;    
+    font-size: 1rem;
+}
+
+/* Hour of operation */
+
+.flex-container {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 1rem;
+ 
+    grid-column: 1 / span 2;
+
+}
+  
+  .flex-row {
+    display: flex; 
+    flex-direction: row;
+}
+/* 黑色描边 */
+
+
+.flex-cell {
+    flex: 1;   
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+
+    padding: 10px;  
+    text-align: center; 
+}
+
+.first-row .flex-cell {
+    border-top: 1px solid black; 
+}
+
+.flex-row .flex-cell:first-child {
+    border-left: 1px solid black; /
+}
+
+
+.first-row .flex-cell {
+    background-color:#ffe6ac; /* 为第一行的单元格填充颜色 */
+}
+
+/* footer style */
+
+.bg-grey{
+    background-color:#222222; 
+    color:#c78b07;
+    padding: 1rem;
+    text-align: start; 
+}
+
+
+
+@media screen and (max-width: 760px) {
+
+    .h1{
+        margin-left: 1rem;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+    
+    /* 导航栏 */
+    .vertical-nav {     
+        flex-direction: column;
+      }
+      
+      nav ul {
+        display: block;
+        text-align: center;
+    }
+    nav li {
+        margin-top: 2rem;
+    }  
+
+
+    /* 搜索框 */
+    .search-container{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    }
+    .search-input {
+        flex-grow: 1;
+        width:370px;
+        height: 30px;
+    }
+
+
+
+    /* 内容 */
+    .our-services, .our-services2{
+        display: block;
+        width: 95%;       
+        margin: 0 auto;
+      }
+      .center-text {
+        display: block;
+        text-align: center; /* 文本居中 */
+      }
+         
+    .bg-color{
+        margin-bottom: 1rem;
+    }
+
+    /* .intro-grid2, .intro-grid3{
+        display:  block;
+ 
+        margin: 0 auto;
+
+        margin-bottom: 1rem;
+    } */
+
+    .john-pic, .bob-pic{
+        width: 100%;  
+    }
+
+    .ot-color{
+        margin-bottom: 1rem;
+    }
+
+
+    /* input[type="text"] {
+        width: 100%; 
+        height: 2rem;
+        margin: 0 auto;
+    } */
+
+
+    .intro-grid3 {
+        display: grid;
+        grid-template-rows: none;
+        grid-template-columns: none;
+        
+        grid-template-rows: auto auto auto; 
+        grid-template-columns: 1f;     
+
+        
+    }
+    .box-survey{
+        grid-column: 1 / span 2;
+    }
+
+    .location{
+        max-width: 100%;
+        
+        grid-column: 1 / span 3;
+    }
+
+  
+    #row2 {
+        grid-row: 3; 
+    }
+      
+      #row3 {
+        grid-row: 2; 
+    }
+    /* .contact-us{
+        display:  block;
+        width: 95%;       
+        margin: 0 auto;
+
+    } */
+
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+
+  

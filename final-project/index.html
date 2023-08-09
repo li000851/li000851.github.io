@@ -4,200 +4,291 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>final project</title>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+	rel="stylesheet">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 	
 	<link rel="stylesheet" href="css/main.css" >
+	<link rel="stylesheet" href="css/reset.css">
 </head>
 
 <body>
 <!-- header with nav -->
 	<header>
 		<div class="wrapper">
-			<img src="images/logo.png" alt="">
-			<nav>
+				
+			<div class="logo"><img id="nav-logo" src="images/logo.png" alt=""></div>
+
+			<nav class="vertical-nav">
+			
 				<ul>
 					<li><a href="#">Home</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Team</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#about-us">About Us</a></li>
+					<li><a href="#our-services">Services</a></li>
+					<li><a href="#our-team">Team</a></li>
+					<li><a href="#contact-us">Contact</a></li>
 				</ul>
 			</nav>
 
-			<form>
-				<input type="search" class="search-bar" name="q" placeholder="search">
-				<input type="submit" value="search">
-				<!-- Need to replace icons -->
-			</form>
+			<div class="search-container">
+
+				<input type="search" name="q" placeholder="Search" class="search-input">
+				
+				<button id="search-button" type="submit" class="material-icons-outlined">search</button>
+
+			</div>
 
 		</div>
 	</header>
 
 
 	<main>
-<!-- banner part -->
-		<section>
-			<div>
-				<img src="images/main-banner.jpg" alt="">
+		<!-- banner part -->
+		<section class="hero-banner">
+			
+			<!-- <div class="image-container"><img id="banner-pic" src="images/main-banner.jpg" alt=""></div> -->
+		
+				<div class="overlay">
 
-				<div id="banner">
-					<div id="overlay"></div>
+					<div class="f-white"> <div class="big-font"><h1>Welcome to Three Star Media</h1></div>
+
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat voluptates quis ad, doloribus quod blanditiis placeat fuga at est culpa obcaecati labore nobis laboriosam commodi praesentium. Est aperiam ad iusto!</p></div>
+
+					<a href="#" class="btn">Connect with us<span class="material-icons-outlined">arrow_right</span></a>
+		
 				</div>
 
-				<h1>Welcome to Three Star Media</h1>
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat voluptates quis ad, doloribus quod blanditiis placeat fuga at est culpa obcaecati labore nobis laboriosam commodi praesentium. Est aperiam ad iusto!</p>
-				<button type="submit">Connect with us</button>
-			</div>
 		</section>
-<!-- about us		 -->
-		<section id="about-us">
-			<div>
-				<h1>About Us</h1>
 
-				<div>
+
+		<!-- about us		 -->
+		<section id="about-us" >
+	
+				<div class="wrapper intro-grid">
+
 					<img class="aboutus-pic" src="images/about-us.jpg" alt="">
-					<p>	Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, vel iusto? Tenetur quo debitis veritatis, nemo cupiditate obcaecati unde! Cumque quam quos laborum facilis labore impedit quaerat vel quia iure.</p>
+
+					<div class="grid"><h1>About Us</h1>
+
+					<p>	Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, vel iusto? Tenetur quo debitis veritatis, nemo cupiditate obcaecati unde! Cumque quam quos laborum facilis labore impedit quaerat vel quia iure.</p>	
+
+					<p>	Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, vel iusto? Tenetur quo debitis veritatis, nemo cupiditate obcaecati unde! Cumque quam quos laborum facilis labore impedit quaerat vel quia iure.</p></div>		
+
+				</div>
+
+		</section>
+		<!-- our services -->
+
+		
+		<section id="our-services" class="wrapper">
+
+			<h1 class="h1">Our Services</h1>
+
+			<div class="our-services">
+
 				
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, vel iusto? Tenetur quo debitis veritatis, nemo cupiditate obcaecati unde! Cumque quam quos laborum facilis labore impedit quaerat vel quia iure.
-					</p>
-				</div>
-			</div>
-		</section>
-<!-- our services -->
-		<section id="our-services">
-			<div class="wrapper">
-				<h1>Our Services</h1>
+					<article class="bg-color">
 
-				<div class="service-grid">
-					<article>
-						<h3>Digital Transformation</h3>
 						<img class="dt-pic" src="images/digital.jpg" alt="">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium obcaecati sed quisquam, accusamus quod animi tempore alias, aliquam corporis eveniet aspernatur enim magni esse dicta expedita beatae ullam nisi.</p>
-						<a class="btn" href="#">Digital Plans</a>
-					</article>
+						
+						<div class="test"><h2>Digital Transformation</h2>
+					
+						<p class="space">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium obcaecati sed quisquam, accusamus quod animi tempore alias, aliquam corporis eveniet aspernatur enim magni esse dicta expedita beatae ullam nisi.</p>
 
-					<article>
-						<h3>Marketing</h3>
+						<a href="#" class="btn2">Digital Plans<span class="material-icons-outlined">arrow_right</span></a></div>
+						
+					</article>
+			
+					<article class="bg-color" id="marketing">
+						
 						<img class="marketing-pic" src="images/marketing.jpg" alt="">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium obcaecati sed quisquam, accusamus quod animi tempore alias, aliquam corporis eveniet aspernatur enim magni esse dicta expedita beatae ullam nisi.</p>
-						<a class="btn" href="#">Marketing Plans</a>
-					</article>
 
-					<article>
-						<h3>Video Production</h3>
+						<div class="test"> <h2>Marketing</h2>
+					
+						<p class="space">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium obcaecati sed quisquam, accusamus quod animi tempore alias, aliquam corporis eveniet aspernatur enim magni esse dicta expedita beatae ullam nisi.</p>
+
+						<a href="#" class="btn2">Marketing Plans<span class="material-icons-outlined">arrow_right</span></a> </div>
+					
+					</article>
+			</div>
+		</section>
+
+		<div class="wrapper">
+			<div class="our-services2">
+					<article class="bg-color">
 						<img class="vp-pic" src="images/video.jpg" alt="">
+
+						<div class="test"><h2>Video Production</h2>
+					
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium obcaecati sed quisquam, accusamus quod animi tempore alias, aliquam corporis eveniet aspernatur enim magni esse dicta expedita beatae ullam nisi.</p>
-						<a class="btn" href="#">Video Plans</a>
+
+						<a href="#" class="btn2">Video Plans<span class="material-icons-outlined">arrow_right</span></a></div>
+
+
 					</article>
 
-					<article>
-						<h3>Web Development</h3>
+					<article class="bg-color">
 						<img class="wd-pic" src="images/web.jpg" alt="">
+
+						<div class="test"><h2>Web Development</h2>
+					
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium obcaecati sed quisquam, accusamus quod animi tempore alias, aliquam corporis eveniet aspernatur enim magni esse dicta expedita beatae ullam nisi.</p>
-						<a class="btn" href="#">Web Plans</a>
+
+						<a href="#" class="btn2">Web Plans<span class="material-icons-outlined">arrow_right</span></a></div>
+
 					</article>
 
-					<article>
-						<h3>Print</h3>
+					<article class="bg-color">
 						<img class="print-pic" src="images/print.jpg" alt="">
+
+						<div class="test"><h2>Print</h2>
+					
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium obcaecati sed quisquam, accusamus quod animi tempore alias, aliquam corporis eveniet aspernatur enim magni esse dicta expedita beatae ullam nisi.</p>
-						<a class="btn" href="#">Print Plans</a>
+						
+						<a href="#" class="btn2">Print Plans<span class="material-icons-outlined">arrow_right</span></a></div>
 					</article>
-				</div>
+			</div>	
+		</div>
+
+
+
+
+		<!-- our vision - banner -->
+
+
+		<section class="vision-banner">
+
+
+			<div id="our-vision" class="wrapper">
+
+				<div class="overlay2">
+				<div class="f-white"><h1>Our Vision</h1>
+				<!-- <img class="vision-pic" src="images/vision.jpg" alt=""> -->
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit maxime itaque molestias sit incidunt, ratione ad natus quidem exercitationem maiores sint omnis? Nam totam nobis nesciunt exercitationem eius officiis quos.</p></div>
+
+
+				<a href="#" class="btn3">Learn More<span class="material-icons-outlined">arrow_right</span></a></div>
+
 			</div>
 		</section>
-<!-- our vision - banner -->
-		<section id="our-vision">
+
+		<!-- our team -->
+		<section id="our-team">
+
 			<div class="wrapper">
-				<h1>Our Vision</h1>
-				<img class="vision-pic" src="images/vision.jpg" alt="">
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit maxime itaque molestias sit incidunt, ratione ad natus quidem exercitationem maiores sint omnis? Nam totam nobis nesciunt exercitationem eius officiis quos.</p>
-				<a class="btn" href="#">Learn More</a>
-			</div>
-		</section>
-<!-- our team -->
-		<section>
-			<div>
-				<h1>Our Team</h1>
-				<div>
-					<article>
-						<h3>John Doe</h3>
+
+			<h1 class="h1">Our Team</h1>
+
+			<div class="intro-grid2">
+
+				 	<img class="john-pic" src="images/john.jpg" alt="">
+
+
+					<article class="ot-color">
+						
+						<div class="text-content"><h2>John Doe</h2>
 						<h5>CEO and Co-owner</h5>
 						<hr>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex error unde tempora laudantium ad, neque similique beatae non aperiam voluptatem. Deserunt tempore blanditiis enim laborum quo, impedit asperiores? Quod, blanditiis?</p>
-						<img class="" src="images/john.jpg" alt="">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex error unde tempora laudantium ad, neque similique beatae non aperiam voluptatem. Deserunt tempore blanditiis enim laborum quo, impedit asperiores? Quod, blanditiis?</p></div>
+						
 					</article>
 
-					<article>
-						<h3>Bob Rite</h3>
+
+					<img class="bob-pic" src="images/bob.jpg" alt="">
+
+					<article class="ot-color2">			
+						<div class="text-content2"><h2>Bob Rite</h2>
 						<h5>CFO and Co-owner</h5>
 						<hr>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex error unde tempora laudantium ad, neque similique beatae non aperiam voluptatem. Deserunt tempore blanditiis enim laborum quo, impedit asperiores? Quod, blanditiis?</p>
-						<img class="" src="images/bob.jpg" alt="">
-					</article>
-				</div>
-			</div>
-		</section>
-<!-- contact us -->
-		<section>
-			<div class="wrapper">
-				<h1>Contact Us</h1>
-<!-- form -->
-				<div class="box-survey">
-					<h3>Send us a message</h3>
-					<form >
-					<div id="name_div">
-						<p><label for="name">Name</label></p>
-						<input id="name" name="frame" type="text" required>
-
-					</div>
-
-					<div>
-						<p><label for="email">Email</label></p>
-						<input id="email" name="frame" type="text" required>
-
-					</div>
-
-					<div>
-						<p><label for="message">Message</label></p>
-						<input id="message" name="frame" type="text" required>
-
-					</div>
-
-					<div>
-						<button type="submit">SEND</button>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex error unde tempora laudantium ad, neque similique beatae non aperiam voluptatem. Deserunt tempore blanditiis enim laborum quo, impedit asperiores? Quod, blanditiis?</p></div>
 						
-					</div>
-					</form>
-				</div>
-<!-- map -->
-				<div>
+					</article>
 
-					<h3>Location</h3>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9442698268126!2d-75.75750062449318!3d45.34993724105641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1szh-CN!2sca!4v1690381461706!5m2!1szh-CN!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
 			</div>
+			</div>	
 		</section>
-<!-- tabular -->
-		<section>
-			<h1>Hour of operation</h1>
-				<table>
-					<tr>
-						<td>Days</td>
-						<td>Hours</td>
-					</tr>
-					<tr>
-						<td>Monday - Friday</td>
-						<td>9 AM - 6 PM</td>
-					</tr>
-					<tr>
-						<td>Saturday - Sunday</td>
-						<td>Closed</td>
-					</tr>
-				</table>
+
+
+
+		<!-- contact us -->
+		<section id="contact-us" class="contact-us">
+
+
+			<h1 class="h1">Contact Us</h1>
+				
+
+
+
+			<div class="intro-grid3">
+
+					<div class="">
+						<h2>Send us a message</h2>
+
+						<form >
+						<div id="name_div">
+							<p><label for="name"> Full Name</label></p>
+							<input id="name" name="frame" type="text" required>
+
+						</div>
+
+						<div>
+							<p><label for="email">Email</label></p>
+							<input id="email" name="frame" type="text" required>
+
+						</div>
+
+						<div>
+							<p><label for="message">Message</label></p>
+							<input id="message" name="frame" type="text" required>
+
+						</div>
+
+						<div>
+							<button class="button-2" type="submit">Send</button>
+							
+						</div>
+						</form>
+	
+					</div>
+
+
+
+			
+
+					<div class="Location" id="row2">
+
+					<h2>Location</h2>
+					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9442698268126!2d-75.75750062449318!3d45.34993724105641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1szh-CN!2sca!4v1690381461706!5m2!1szh-CN!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+
+
+
+				<div class="flex-container" id="row3">
+				<h2>Hour of operation</h2>
+				
+				<div class="flex-row first-row">
+					<div class="flex-cell">Day</div>
+					<div class="flex-cell">Hours</div>
+				</div>
+				
+				<div class="flex-row">
+					<div class="flex-cell">Monday - Friday</div>
+					<div class="flex-cell">9 AM - 6 PM</div>
+				</div>
+				<div class="flex-row">
+					<div class="flex-cell">Saturday - Sunday</div>
+					<div class="flex-cell">Closed</div>
+				</div> 
+
+			</div>
+
+			</div>
+		
 		</section>
 	</main>
 
