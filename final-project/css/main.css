@@ -283,6 +283,7 @@ article {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr;
+
 }
 
 hr{
@@ -410,7 +411,7 @@ input[type="text"] {
 
 .contact-us{
     display:  block;
-    width: 95%;       
+    width: 85%;       
     margin: 0 auto;
 
 }
