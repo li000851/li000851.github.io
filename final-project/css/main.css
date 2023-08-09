@@ -147,6 +147,10 @@ nav a:focus {
 
     padding-right: 1.5rem;
 }
+span.material-icons-outlined{
+    align-items: center;
+    justify-items: center;
+}
 
 /* about us */
 
@@ -404,6 +408,13 @@ input[type="text"] {
     text-align: start; 
 }
 
+.contact-us{
+    display:  block;
+    width: 95%;       
+    margin: 0 auto;
+
+}
+
 
 
 @media screen and (max-width: 760px) {
@@ -461,13 +472,13 @@ input[type="text"] {
         margin-bottom: 1rem;
     }
 
-    /* .intro-grid2, .intro-grid3{
+    .intro-grid2, .intro-grid3{
         display:  block;
- 
+        width: 95%;       
         margin: 0 auto;
 
         margin-bottom: 1rem;
-    } */
+    }
 
     .john-pic, .bob-pic{
         width: 100%;  
@@ -490,8 +501,8 @@ input[type="text"] {
         grid-template-rows: none;
         grid-template-columns: none;
         
-        grid-template-rows: auto auto auto; 
-        grid-template-columns: 1f;     
+        grid-template-rows: auto auto 1fr; 
+        grid-template-columns: 1fr;     
 
         
     }
@@ -513,12 +524,12 @@ input[type="text"] {
       #row3 {
         grid-row: 2; 
     }
-    /* .contact-us{
+    .contact-us{
         display:  block;
         width: 95%;       
         margin: 0 auto;
 
-    } */
+    }
 
 
 }
