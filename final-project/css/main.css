@@ -140,13 +140,16 @@ nav a:focus {
     background-color: #c78b07;
     text-decoration: none;
     color: black;
-    display: inline-block;
-    padding: 1rem;
 
-    text-align: center; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
 
-    padding-right: 1.5rem;
+    width: 20%;
+    height: 50px;
 }
+
+  
 span.material-icons-outlined{
     align-items: center;
     justify-items: center;
@@ -218,8 +221,10 @@ article {
 .btn2{
     background-color: #222222;
 
-    text-align: center; 
-    display: inline-block;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+
     width: 100%;
     padding: 5%;
     text-decoration: none;
@@ -268,12 +273,19 @@ article {
     background-color: #00000070;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    display: inline-block;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+
+    width: 20%;
+    height: 50px;
+
     padding: 1rem;
 
     text-align: center; 
-    padding-right: 1rem;
+
     border: 1px solid #c78b07
+    
 }
 
 
@@ -495,7 +507,15 @@ input[type="text"] {
         height: 2rem;
         margin: 0 auto;
     } */
+    .btn{
+        width: 50%;
+    }
 
+    .btn3{
+        
+        width: 50%;
+    }
+    
 
     .intro-grid3 {
         display: grid;
